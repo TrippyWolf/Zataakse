@@ -7,10 +7,11 @@ import {
   Image,
 } from 'react-native';
 import {SPACING} from '../../../styles/spacings';
+import useTheme, {ThemeStyles} from '../../../theme/useTheme';
 
 const HorizontalCarousel = (props: {subcategory: SubCategory[]}) => {
   const {subcategory} = props;
-
+  const {styles} = useTheme(makeStyles);
   return (
     <View style={styles.container}>
       <ScrollView
@@ -41,30 +42,31 @@ const HorizontalCarousel = (props: {subcategory: SubCategory[]}) => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    marginTop: SPACING.S_1,
-  },
-  itemContainer: {
-    alignItems: 'center',
-    borderWidth: 1,
-    borderColor: '#F1EFEF',
-    borderRadius: 4,
-    flexDirection: 'row',
-    margin: SPACING.S_1,
-    padding: SPACING.S_0,
-  },
-  image: {
-    width: 24,
-    height: 24,
-  },
-  title: {
-    fontSize: 12,
-    fontWeight: '500',
-    color: '#2A2A2A',
-    marginRight: SPACING.S_1,
-  },
-});
+const makeStyles = ({colors}: ThemeStyles) =>
+  StyleSheet.create({
+    container: {
+      flex: 1,
+      marginTop: SPACING.S_1,
+    },
+    itemContainer: {
+      alignItems: 'center',
+      borderWidth: 1,
+      borderColor: colors['border-primary'],
+      borderRadius: 4,
+      flexDirection: 'row',
+      margin: SPACING.S_1,
+      padding: SPACING.S_0,
+    },
+    image: {
+      width: 24,
+      height: 24,
+    },
+    title: {
+      fontSize: 12,
+      fontWeight: '500',
+      color: colors['content-secondary'],
+      marginRight: SPACING.S_1,
+    },
+  });
 
 export default HorizontalCarousel;

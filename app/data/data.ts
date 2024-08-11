@@ -330,6 +330,24 @@ export const AppData: AppDataState = {
       image: require('../../assets/sweets.png'),
       categoryId: 7,
     },
+    {
+      id: 149,
+      name: 'Dried Fruits',
+      image: require('../../assets/chips.png'),
+      categoryId: 1,
+    },
+    {
+      id: 150,
+      name: 'Protein Shake',
+      image: require('../../assets/chips.png'),
+      categoryId: 1,
+    },
+    {
+      id: 151,
+      name: 'Healthy Biscuits',
+      image: require('../../assets/biscuit.png'),
+      categoryId: 1,
+    },
   ],
   products: [
     {
@@ -340,6 +358,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/chips.png'),
       description: 'Crunchy potato chips with a hint of salt.',
       availability: true,
+      categoryId: 1,
       subcategoryId: 101,
     },
     {
@@ -350,6 +369,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/chips.png'),
       description: 'Crunchy corn chips with a cheesy flavor.',
       availability: true,
+      categoryId: 1,
       subcategoryId: 102,
     },
     {
@@ -360,6 +380,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/biscuit.png'),
       description: 'Sweet and crunchy biscuits.',
       availability: true,
+      categoryId: 1,
       subcategoryId: 103,
     },
     {
@@ -370,6 +391,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/biscuit.png'),
       description: 'Delicious cookies with chocolate chips.',
       availability: true,
+      categoryId: 1,
       subcategoryId: 104,
     },
     {
@@ -380,6 +402,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/chips.png'),
       description: 'Salty pretzels with a twist.',
       availability: true,
+      categoryId: 1,
       subcategoryId: 105,
     },
     {
@@ -390,6 +413,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/chips.png'),
       description: 'Light and fluffy popcorn with a buttery flavor.',
       availability: true,
+      categoryId: 1,
       subcategoryId: 106,
     },
     {
@@ -400,6 +424,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/sweets.png'),
       description: 'Sweet and chewy candy bars.',
       availability: true,
+      categoryId: 1,
       subcategoryId: 107,
     },
     {
@@ -410,6 +435,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/coke.png'),
       description: 'Boost your energy with these refreshing drinks.',
       availability: true,
+      categoryId: 1,
       subcategoryId: 108,
     },
     {
@@ -420,6 +446,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/coke.png'),
       description: 'Classic soda with a fizzy kick.',
       availability: true,
+      categoryId: 1,
       subcategoryId: 109,
     },
     {
@@ -430,6 +457,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/coke.png'),
       description: 'Fresh and fruity juices.',
       availability: true,
+      categoryId: 1,
       subcategoryId: 110,
     },
     {
@@ -440,6 +468,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/coffee.png'),
       description: 'Convenient instant coffee for a quick brew.',
       availability: true,
+      categoryId: 8,
       subcategoryId: 111,
     },
     {
@@ -450,6 +479,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/coffee.png'),
       description: 'Rich and aromatic ground coffee.',
       availability: true,
+      categoryId: 8,
       subcategoryId: 112,
     },
     {
@@ -460,6 +490,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/coffee.png'),
       description: 'Assorted tea bags for a relaxing brew.',
       availability: true,
+      categoryId: 8,
       subcategoryId: 113,
     },
     {
@@ -470,6 +501,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/coffee.png'),
       description: 'High-quality loose leaf tea.',
       availability: true,
+      categoryId: 5,
       subcategoryId: 114,
     },
     {
@@ -480,6 +512,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/milk.png'),
       description: 'Fresh and creamy milk.',
       availability: true,
+      categoryId: 5,
       subcategoryId: 115,
     },
     {
@@ -490,6 +523,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/milk.png'),
       description: 'Farm-fresh eggs.',
       availability: true,
+      categoryId: 4,
       subcategoryId: 116,
     },
     {
@@ -500,6 +534,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/milk.png'),
       description: 'Creamy yogurt in various flavors.',
       availability: true,
+      categoryId: 4,
       subcategoryId: 117,
     },
     {
@@ -510,6 +545,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/milk.png'),
       description: 'Rich and creamy butter.',
       availability: true,
+      categoryId: 3,
       subcategoryId: 118,
     },
     {
@@ -520,6 +556,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/milk.png'),
       description: 'Aged cheese with a sharp flavor.',
       availability: true,
+      categoryId: 3,
       subcategoryId: 119,
     },
     {
@@ -530,6 +567,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/milk.png'),
       description: 'Heavy cream for cooking and baking.',
       availability: true,
+      categoryId: 3,
       subcategoryId: 120,
     },
     {
@@ -540,6 +578,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/shampoo.png'),
       description: 'Minty toothpaste for a fresh breath.',
       availability: true,
+      categoryId: 2,
       subcategoryId: 121,
     },
     {
@@ -550,6 +589,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/shampoo.png'),
       description: 'Nourishing shampoo for healthy hair.',
       availability: true,
+      categoryId: 2,
       subcategoryId: 122,
     },
     {
@@ -560,6 +600,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/shampoo.png'),
       description: 'Conditioner for smooth and shiny hair.',
       availability: true,
+      categoryId: 2,
       subcategoryId: 123,
     },
     {
@@ -570,6 +611,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/shampoo.png'),
       description: 'Gentle soap for everyday use.',
       availability: true,
+      categoryId: 2,
       subcategoryId: 124,
     },
     {
@@ -580,6 +622,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/shampoo.png'),
       description: 'Refreshing body wash with a pleasant scent.',
       availability: true,
+      categoryId: 2,
       subcategoryId: 125,
     },
     {
@@ -590,6 +633,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/shampoo.png'),
       description: 'Moisturizing lotion for soft skin.',
       availability: true,
+      categoryId: 5,
       subcategoryId: 126,
     },
     {
@@ -600,6 +644,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/shampoo.png'),
       description: 'Deodorant for all-day freshness.',
       availability: true,
+      categoryId: 5,
       subcategoryId: 127,
     },
     {
@@ -610,6 +655,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/cleaner.png'),
       description: 'Detergent for clean and fresh laundry.',
       availability: true,
+      categoryId: 6,
       subcategoryId: 128,
     },
     {
@@ -620,6 +666,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/cleaner.png'),
       description: 'Effective dish soap for washing dishes.',
       availability: true,
+      categoryId: 7,
       subcategoryId: 129,
     },
     {
@@ -630,6 +677,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'Long grain rice for various recipes.',
       availability: true,
+      categoryId: 6,
       subcategoryId: 130,
     },
     {
@@ -640,6 +688,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'All-purpose flour for baking and cooking.',
       availability: true,
+      categoryId: 6,
       subcategoryId: 131,
     },
     {
@@ -650,6 +699,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'Granulated sugar for sweetening.',
       availability: true,
+      categoryId: 7,
       subcategoryId: 132,
     },
     {
@@ -660,6 +710,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'Essential salt for cooking.',
       availability: true,
+      categoryId: 4,
       subcategoryId: 133,
     },
     {
@@ -670,6 +721,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'Ground black pepper for seasoning.',
       availability: true,
+      categoryId: 4,
       subcategoryId: 134,
     },
     {
@@ -680,6 +732,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/masala.png'),
       description: 'Spice mix for flavorful dishes.',
       availability: true,
+      categoryId: 8,
       subcategoryId: 135,
     },
     {
@@ -690,6 +743,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/masala.png'),
       description: 'Blend of spices for curry dishes.',
       availability: true,
+      categoryId: 5,
       subcategoryId: 136,
     },
     {
@@ -700,6 +754,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/masala.png'),
       description: 'Spicy chili powder for heat.',
       availability: true,
+      categoryId: 5,
       subcategoryId: 137,
     },
     {
@@ -710,6 +765,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/masala.png'),
       description: 'Golden turmeric powder for color and flavor.',
       availability: true,
+      categoryId: 5,
       subcategoryId: 138,
     },
     {
@@ -720,6 +776,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'Vegetable oil for cooking.',
       availability: true,
+      categoryId: 8,
       subcategoryId: 139,
     },
     {
@@ -730,6 +787,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'Savory soy sauce for flavoring dishes.',
       availability: true,
+      categoryId: 8,
       subcategoryId: 140,
     },
     {
@@ -740,6 +798,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/cleaner.png'),
       description: 'Multi-purpose cleaning spray.',
       availability: true,
+      categoryId: 8,
       subcategoryId: 141,
     },
     {
@@ -750,6 +809,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/cleaner.png'),
       description: 'Dish soap for washing dishes.',
       availability: true,
+      categoryId: 2,
       subcategoryId: 142,
     },
     {
@@ -760,6 +820,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/cleaner.png'),
       description: 'Detergent for clean and fresh laundry.',
       availability: true,
+      categoryId: 3,
       subcategoryId: 143,
     },
     {
@@ -770,6 +831,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/cleaner.png'),
       description: 'Effective all-purpose cleaner.',
       availability: true,
+      categoryId: 5,
       subcategoryId: 144,
     },
     {
@@ -780,6 +842,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/cleaner.png'),
       description: 'Specialty cleaner for bathroom surfaces.',
       availability: true,
+      categoryId: 5,
       subcategoryId: 145,
     },
     {
@@ -790,6 +853,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'Daily vitamins for health.',
       availability: true,
+      categoryId: 8,
       subcategoryId: 146,
     },
     {
@@ -800,6 +864,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'Pain relief medication for aches and pains.',
       availability: true,
+      categoryId: 6,
       subcategoryId: 147,
     },
     {
@@ -810,6 +875,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'Relieves cough and throat irritation.',
       availability: true,
+      categoryId: 6,
       subcategoryId: 148,
     },
     {
@@ -820,6 +886,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'Comprehensive first aid kit for emergencies.',
       availability: true,
+      categoryId: 5,
       subcategoryId: 149,
     },
     {
@@ -830,6 +897,7 @@ export const AppData: AppDataState = {
       image: require('../../assets/maggi.png'),
       description: 'Antibacterial hand sanitizer.',
       availability: true,
+      categoryId: 5,
       subcategoryId: 150,
     },
   ],

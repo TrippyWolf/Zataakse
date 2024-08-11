@@ -16,6 +16,7 @@ interface Product {
   image: string;
   description: string;
   availability: boolean;
+  categoryId: number;
   subcategoryId: number;
 }
 

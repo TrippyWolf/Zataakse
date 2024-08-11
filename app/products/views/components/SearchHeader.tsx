@@ -3,6 +3,7 @@ import {SPACING} from '../../../styles/spacings';
 import {useState} from 'react';
 import {NativeStackHeaderProps} from '@react-navigation/native-stack';
 import Icon from 'react-native-vector-icons/MaterialIcons';
+import useTheme, {ThemeStyles} from '../../../theme/useTheme';
 
 const SearchHeader = ({
   navigation,
@@ -11,7 +12,7 @@ const SearchHeader = ({
   back,
 }: NativeStackHeaderProps) => {
   const [text, setText] = useState('');
-
+  const {styles, colors} = useTheme(makeStyles);
   return (
     <View style={styles.container}>
       <View style={styles.searchContainer}>
@@ -26,7 +27,7 @@ const SearchHeader = ({
         <TextInput
           style={styles.textInput}
           placeholder={'Search to add products'}
-          placeholderTextColor={'#C5BEC0'}
+          placeholderTextColor={colors['content-secondary-alt']}
           onChange={options.headerSearchBarOptions?.onChangeText}
           inputMode="text"
           value={text}
@@ -51,37 +52,39 @@ const SearchHeader = ({
 
 export default SearchHeader;
 
-const styles = StyleSheet.create({
-  container: {
-    width: '100%',
-  },
-  searchContainer: {
-    marginHorizontal: SPACING.S_2,
-    marginTop: SPACING.S_2,
-    flexDirection: 'row',
-    backgroundColor: '#fff',
-    borderRadius: 40,
-    justifyContent: 'space-between',
-    alignContent: 'center',
-    alignItems: 'center',
-  },
-  title: {
-    fontWeight: '700',
-    fontSize: 16,
-    color: '#2A2A2A',
-    marginTop: SPACING.S_1,
-  },
-  subTitle: {
-    fontWeight: '400',
-    fontSize: 12,
-    color: '#2A2A2A',
-    marginVertical: SPACING.S_0,
-  },
-  icon: {
-    color: '#C5BEC0',
-    marginHorizontal: SPACING.S_2,
-  },
-  textInput: {
-    flex: 1,
-  },
-});
+const makeStyles = ({colors}: ThemeStyles) =>
+  StyleSheet.create({
+    container: {
+      width: '100%',
+    },
+    searchContainer: {
+      marginHorizontal: SPACING.S_2,
+      marginTop: SPACING.S_2,
+      flexDirection: 'row',
+      backgroundColor: colors['background-secondary'],
+      borderRadius: 40,
+      justifyContent: 'space-between',
+      alignContent: 'center',
+      alignItems: 'center',
+    },
+    title: {
+      fontWeight: '700',
+      fontSize: 16,
+      color: colors['content-secondary'],
+      marginTop: SPACING.S_1,
+    },
+    subTitle: {
+      fontWeight: '400',
+      fontSize: 12,
+      color: colors['content-secondary'],
+      marginVertical: SPACING.S_0,
+    },
+    icon: {
+      color: colors['content-secondary-alt'],
+      marginHorizontal: SPACING.S_2,
+    },
+    textInput: {
+      flex: 1,
+      color:colors['content-primary']
+    },
+  });

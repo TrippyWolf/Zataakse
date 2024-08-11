@@ -1,7 +1,7 @@
 import CarouselCategory from '../components/CarouselCategory';
 import {
   getCategoryName,
-  getProductsBySubcategoryId,
+  getProductsByCategoryId,
   getSubcategoriesForCarousel,
 } from '../../src/ProductRepository';
 import ProductCardList from '../components/ProductCardList';
@@ -33,10 +33,7 @@ const ProductSubCategoryScreen = ({
     () => getSubcategoriesForCarousel(categoryId),
     [],
   );
-  const productList = useMemo(
-    () => getProductsBySubcategoryId(subCategoryId),
-    [],
-  );
+  const productList = useMemo(() => getProductsByCategoryId(categoryId), []);
 
   return (
     <View style={{flex: 1}}>

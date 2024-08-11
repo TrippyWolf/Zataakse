@@ -4,7 +4,7 @@ import {GestureHandlerRootView} from 'react-native-gesture-handler';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
 
 import MainNavigation from './MainNavigation';
-import ThemeProvider from './AppThemeProvider';
+import ThemeProvider from '../../theme/ThemeProvider';
 
 const AppBody = React.memo(() => {
   return (

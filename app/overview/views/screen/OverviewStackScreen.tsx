@@ -1,6 +1,7 @@
 import {Text} from 'react-native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {SPACING} from '../../../styles/spacings';
+import useTheme from '../../../theme/useTheme';
 
 const OverviewStack = createNativeStackNavigator();
 
@@ -18,15 +19,19 @@ function OverviewMainScreen() {
   );
 }
 function OverviewStackScreen() {
+  const {colors} = useTheme();
   return (
     <OverviewStack.Navigator
       screenOptions={{
         headerTitleStyle: {
           fontSize: 20,
           fontWeight: 'bold',
-          color: '#6B6062',
+          color: colors['content-primary'],
         },
         headerTitleAlign: 'center',
+        headerStyle: {
+          backgroundColor: colors['background-secondary'],
+        },
       }}>
       <OverviewStack.Screen
         name="Overview Screen"

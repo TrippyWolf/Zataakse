@@ -13,9 +13,9 @@ export function getSubcategoriesByCategoryId(
   );
 }
 
-export function getProductsBySubcategoryId(subcategoryId: number): Product[] {
+export function getProductsByCategoryId(categoryId: number): Product[] {
   return AppData.products.filter(
-    (product: any) => product.subcategoryId === subcategoryId,
+    (product: any) => product.categoryId === categoryId,
   );
 }
 

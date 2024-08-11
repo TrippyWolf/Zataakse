@@ -7,6 +7,7 @@ import {
   ProductRouteNames,
 } from '../screens/ProductScreenStack';
 import {useNavigation} from '@react-navigation/native';
+import useTheme, {ThemeStyles} from '../../../theme/useTheme';
 
 type SubCategoryScreenNavigationProp = NativeStackNavigationProp<
   ProductStackParamList,
@@ -15,7 +16,7 @@ type SubCategoryScreenNavigationProp = NativeStackNavigationProp<
 
 const ViewAllCard = ({label}) => {
   const navigation = useNavigation<SubCategoryScreenNavigationProp>();
-
+  const {styles} = useTheme(makeStyles);
   return (
     <TouchableOpacity
       onPress={() => {
@@ -30,32 +31,33 @@ const ViewAllCard = ({label}) => {
   );
 };
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    width: 80,
-  },
-  imageContainer: {
-    height: 70,
-    alignItems: 'center',
-    justifyContent: 'center',
-    borderWidth: 1,
-    backgroundColor: '#fff',
-    borderColor: '#F1EFEF',
-    marginBottom: SPACING.S_1,
-    borderRadius: 12,
-  },
-  image: {
-    resizeMode: 'contain',
-    height: 50,
-  },
-  label: {
-    fontSize: 10,
-    fontWeight: '500',
-    textAlign: 'center',
-    color: '#2A2A2A',
-    maxWidth: 75,
-  },
-});
+const makeStyles = ({colors}: ThemeStyles) =>
+  StyleSheet.create({
+    container: {
+      flex: 1,
+      width: 80,
+    },
+    imageContainer: {
+      height: 70,
+      alignItems: 'center',
+      justifyContent: 'center',
+      borderWidth: 1,
+      backgroundColor: colors['background-secondary'],
+      borderColor: colors['background-tertiary'],
+      marginBottom: SPACING.S_1,
+      borderRadius: 12,
+    },
+    image: {
+      resizeMode: 'contain',
+      height: 50,
+    },
+    label: {
+      fontSize: 10,
+      fontWeight: '500',
+      textAlign: 'center',
+      color: colors['content-primary'],
+      maxWidth: 75,
+    },
+  });
 
 export default ViewAllCard;
